@@ -10,8 +10,18 @@
     <h3>My Daily Schedule</h3><br>
 
     <table>
-      <tr> <!--Shift + alt + down arrow = duplicate -->
-        <td>
+      <caption>My Daily Schedule</caption>
+      <thead>
+      <tr>
+        <!-- <th>&nbsp;</th> -->
+        <th id="time" scope="col">Time</th>
+        <th scope="col">Activity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr> 
+        <th id="morning" scope="row">Morning</th>
+        <td headers="time morning>
           <time datetime="08:00">8am
           </time>-<time datetime="11:00"> 11am</time>
         </td>
@@ -19,6 +29,7 @@
         </tr>
         
       <tr> 
+        <th scope="col">Break</th>
         <td>
           <time datetime="11:00">11am
           </time>-<time datetime="12:00"> 12pm</time>
@@ -27,23 +38,34 @@
         </tr>
 
       <tr> 
+        <th scope="col">Afternoon</th>
         <td>
           <time datetime="12:00">12pm
           </time>-<time datetime="17:00"> 5pm</time>
         </td>
         <td>Study for Other Courses</td>
         </tr>
+        <tr>
+          <th scope="col">Evening</th>
+          <td rowspan="2">All Other Times</td>
+          <td>Free Time</td>
+        </tr>
+        <tr>
+          <th scope="col">Night</th>
+          <td>Sleep</td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">And that's what i do everyday. Eat, sleep, code, hence repeat!</td>
+          </tr>
+        </tfoot>
     </table>
-
-
-
-
-
-
-
-
-
 
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- LISTA DE MACETES -->
+<!--Shift + alt + down arrow = duplicate -->
+<!-- Tables only expands to space occupied by the content itself -->
